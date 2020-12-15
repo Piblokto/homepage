@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>~</title>
+		<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+		<link href="favicon.png" rel="shortcut icon" type="image/x-icon">
+	</head>
+
+	<body>
+		<div id="main_window">
+			<img id=leftImg src="assets/img/image.png" class="image">
+
+			<div id="content">
+				<h1 class="title">Welcome</h1>
+				<script id="date" type="text/javascript">
+					//Thanks to Teiem1 on Reddit for the suggestion :)
+					var d = new Intl.DateTimeFormat('en-US', {day:"numeric", month:"long", year: "numeric"}).format(new Date());
+					var h = new Intl.DateTimeFormat('en-US', {hour: 'numeric', minute: 'numeric', hour12: false}).format(new Date());
+					document.write(d + " | " + h);
+				</script>
+				<div id="web_search">
+					<form action="https://duckduckgo.com/" method="GET" autocomplete="off">
+						<label for="q">></label>
+						<input autofocus
+			        	 		id="q"
+			         			name="q"
+			         			type="search"
+			         			placeholder="search with duckduckgo...">
+					</form>
+				</div>
+
+				<nav>
+					<div id=links_container>
+						<ul>
+							<a class="subtitle">Frequent</a>
+								<li><a href="https://reddit.com">Reddit</a></li>
+								<li><a href="https://app.plex.tv/desktop">Plex</a></li>
+								<li><a href="https://youtube.com">YouTube</a></li>
+								<li><a href="https://rargb.to">RARGB</a></li>
+						</ul>
+						<ul>
+							<a class="subtitle">Personal</a>
+								<li><a href="https://mail.google.com/mail/u/0/#inbox">Gmail</a></li>
+								<li><a href="https://mail.protonmail.com/inbox">Protonmail</a></li>
+								<li><a href="https://github.com/">Github</a></li>
+								<li><a href="https://stackoverflow.com/">StackOverflow</a></li>
+
+						</ul>
+						<ul>
+							<a class="subtitle">School</a>
+								<li><a href="https://balmoralshs.eq.daymap.net/DaymapConnect/logon.aspx?ReturnUrl=%2fdaymapconnect%2f">Daymap</a></li>
+								<li><a href="https://outlook.office.com/mail/inbox">E-Mail</a></li>
+								<li><a href="https://teams.microsoft.com/_#/school//?ctx=teamsGrid">Teams</a></li>
+								<li><a href="https://trello.com/ligmaballs2/boards">Trello</a></li>
+						</ul>
+						<ul>
+							<a class="subtitle">News</a>
+								<li><a href="https://arstechnica.com/">ArsTech</a></li>
+								<li><a href="https://www.techspot.com/">TechSpot</a></li>
+								<li><a href="https://www.theguardian.com/au">Guardian</a></li>
+								<li><a href="https://abc.net.au">ABC</a></li>
+						</ul>
+						<ul>
+							<a class="subtitle">Local</a>
+								<li><a href="http://10.0.0.1">Router</a></li>
+								<li><a href="http://10.0.0.10:8181/home">Tautulli</a></li>
+								<li><a href="http://10.0.0.22/admin">Pi-Hole</a></li>
+								<li><a href="http://10.0.0.22">LibreSpeed</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</body>
+</html>
